@@ -38,18 +38,17 @@ Weather_Erlangen_Zuerich/
 ---
 
 ## Build the Docker Image and Run
-
-```bash:
+```bash
 docker build -t weather-erlangen-zuerich .
 docker run --rm weather-erlangen-zuerich
 ```
 ## Screenshots
 
-<p align="center">
-  <img src="screenshots/output1.png" width="45%">
-  <img src="screenshots/output2.png" width="45%">
-</p>
+### Screenshot 1
+<img src="screenshots/Screenshot1.png" style="max-width:700px; width:100%;" alt="Screenshot 1">
 
+### Screenshot 2
+<img src="screenshots/Screenshot2.png" style="max-width:700px; width:100%;" alt="Screenshot 2">
 ---
 
 #  MIT License
