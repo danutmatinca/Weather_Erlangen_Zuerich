@@ -23,3 +23,7 @@ jobs:
           context: .
           push: false
           tags: weather-erlangen-zuerich:ci
+          load: true
+
+      - name: Run container (show weather output)
+        run: docker run --rm weather-erlangen-zuerich:ci
