@@ -1,5 +1,7 @@
 # 🌦 Weather Erlangen & Zürich (Docker CLI App)
 
+[![CI](https://github.com/danutmatinca/Weather_Erlangen_Zuerich/actions/workflows/ci.yml/badge.svg)](https://github.com/danutmatinca/Weather_Erlangen_Zuerich/actions)
+
 A simple Dockerized Python CLI application that fetches current weather data 
 for Erlangen 🇩🇪 and Zürich 🇨🇭 using the Open-Meteo API (no API key required).
 
