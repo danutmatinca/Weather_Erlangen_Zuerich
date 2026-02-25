@@ -7,23 +7,14 @@ on:
     branches: ["main"]
 
 jobs:
-  docker-build:
+  docker-build-and-run:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Build Docker image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: false
-          tags: weather-erlangen-zuerich:ci
-          load: true
+      - name: Build Docker image (local)
+        run: docker build -t weather-erlangen-zuerich:ci .
 
       - name: Run container (show weather output)
         run: docker run --rm weather-erlangen-zuerich:ci
