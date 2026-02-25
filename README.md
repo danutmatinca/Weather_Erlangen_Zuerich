@@ -39,10 +39,16 @@ Weather_Erlangen_Zuerich/
 
 ## Build the Docker Image and Run
 
-``` bash:
+```bash:
 docker build -t weather-erlangen-zuerich .
-
 docker run --rm weather-erlangen-zuerich
+```
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/output1.png" width="45%">
+  <img src="screenshots/output2.png" width="45%">
+</p>
 
 ---
 
